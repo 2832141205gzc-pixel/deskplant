@@ -1,0 +1,329 @@
+{
+  "canvas": [256, 272],
+  "plants": [
+    {
+      "id": "passion-fruit",
+      "name": "鸡蛋果（紫皮百香果）",
+      "alphaMin": 64,
+      "parts": {
+        "pot":   { "crop": [90, 122, 337, 272], "pivot": [0.5, 1] },
+        "sprout":{ "crop": [631, 130, 265, 183], "pivot": [0.51, 1] },
+        "vine":  { "crop": [1047, 67, 435, 366], "pivot": [0.5, 1] },
+        "flower":{ "crop": [69, 570, 381, 391], "pivot": [0.49, 1] },
+        "green": { "crop": [649, 560, 212, 397], "pivot": [0.84, 0.02] },
+        "ripe":  { "crop": [1148, 561, 223, 401], "pivot": [0.85, 0.02] }
+      },
+      "pot": { "part": "pot", "at": [128, 254], "width": 123 },
+      "stages": [
+        { "name": "幼苗", "layers": [{ "part": "sprout", "at": [128, 176], "width": 68 }] },
+        { "name": "攀藤", "layers": [{ "part": "vine", "at": [128, 176], "width": 143 }] },
+        { "name": "开花", "layers": [{ "part": "vine", "at": [128, 176], "width": 180 }, { "part": "flower", "at": [142, 119], "width": 52 }] },
+        { "name": "结果", "layers": [{ "part": "vine", "at": [128, 176], "width": 180 }, { "part": "ripe", "at": [166, 110], "width": 35 }] }
+      ],
+      "unripe": { "part": "green", "at": [166, 110], "width": 28 }
+    },
+    {
+      "id": "pineapple",
+      "name": "菠萝",
+      "alphaMin": 9,
+      "pickHeight": 0.51,
+      "parts": {
+        "pot": {"crop": [8, 8, 340, 308], "pivot": [0.5, 1]},
+        "sprout": {"crop": [356, 8, 321, 367], "pivot": [0.4922, 0.9891]},
+        "rosette": {"crop": [685, 8, 546, 375], "pivot": [0.5165, 0.752]},
+        "flower": {"crop": [1239, 8, 154, 400], "pivot": [0.5065, 0.995]},
+        "green": {"crop": [1401, 8, 132, 434], "pivot": [0.5227, 0.9954]},
+        "ripe": {"crop": [1541, 8, 175, 445], "pivot": [0.4914, 0.9955]},
+        "harvest": {"crop": [1724, 8, 175, 333], "pivot": [0.5, 1]}
+      },
+      "pot": {"part": "pot", "at": [128, 257], "width": 117},
+      "stages": [
+        {"name": "叶丛", "layers": [{"part": "sprout", "at": [128, 171], "width": 84}]},
+        {"name": "抽花", "layers": [{"part": "rosette", "at": [128, 166], "width": 196}, {"part": "flower", "at": [128, 164], "width": 34}]},
+        {"name": "青果", "layers": [{"part": "rosette", "at": [128, 166], "width": 196}, {"part": "green", "at": [128, 164], "width": 36}]},
+        {"name": "成熟", "layers": [{"part": "rosette", "at": [128, 166], "width": 196}, {"part": "ripe", "at": [128, 164], "width": 57}]}
+      ]
+    },
+    {
+      "id": "blueberry",
+      "name": "蓝莓",
+      "alphaMin": 9,
+      "parts": {
+        "pot":   { "crop": [88, 84, 356, 362], "pivot": [0.5, 1] },
+        "sprout":{ "crop": [606, 97, 321, 346], "pivot": [0.48, 1] },
+        "bush":  { "crop": [1033, 53, 472, 391], "pivot": [0.47, 1] },
+        "flower":{ "crop": [97, 573, 330, 396], "pivot": [0.02, 0.03] },
+        "green": { "crop": [593, 576, 311, 361], "pivot": [0.02, 0.03] },
+        "ripe":  { "crop": [1079, 577, 349, 382], "pivot": [0.08, 0.03] }
+      },
+      "pot": { "part": "pot", "at": [128, 254], "width": 112 },
+      "stages": [
+        { "name": "幼株", "layers": [{ "part": "sprout", "at": [128, 164], "width": 62 }] },
+        { "name": "铃花", "layers": [{ "part": "bush", "at": [128, 164], "width": 174 }, { "part": "flower", "at": [81, 87], "width": 35 }, { "part": "flower", "at": [155, 68], "width": 42 }] },
+        { "name": "青果", "layers": [{ "part": "bush", "at": [128, 164], "width": 174 }, { "part": "green", "at": [81, 87], "width": 33 }, { "part": "green", "at": [155, 68], "width": 38 }] },
+        { "name": "蓝果", "layers": [{ "part": "bush", "at": [128, 164], "width": 174 }, { "part": "ripe", "at": [81, 87], "width": 39 }, { "part": "ripe", "at": [155, 68], "width": 45 }] }
+      ]
+    },
+    {
+      "id": "strawberry",
+      "name": "草莓",
+      "alphaMin": 9,
+      "parts": {
+        "pot":   { "crop": [81, 128, 377, 298], "pivot": [0.5, 1] },
+        "sprout":{ "crop": [599, 167, 307, 210], "pivot": [0.5, 1] },
+        "crown": { "crop": [1016, 53, 488, 366], "pivot": [0.48, 1] },
+        "flower":{ "crop": [83, 608, 375, 324], "pivot": [0.49, 1] },
+        "green": { "crop": [574, 584, 356, 288], "pivot": [0.51, 0.02] },
+        "ripe":  { "crop": [1053, 588, 401, 330], "pivot": [0.5, 0.02] }
+      },
+      "pot": { "part": "pot", "at": [128, 254], "width": 122 },
+      "stages": [
+        { "name": "幼苗", "layers": [{ "part": "sprout", "at": [128, 177], "width": 74 }] },
+        { "name": "展叶", "layers": [{ "part": "crown", "at": [128, 177], "width": 146 }] },
+        { "name": "开花", "layers": [{ "part": "crown", "at": [128, 177], "width": 175 }, { "part": "flower", "at": [139, 123], "width": 75 }] },
+        { "name": "结果", "layers": [{ "part": "crown", "at": [128, 177], "width": 175 }, { "part": "ripe", "at": [129, 107], "width": 96 }] }
+      ],
+      "unripe": { "part": "green", "at": [129, 107], "width": 78 }
+    },
+    {
+      "id": "kumquat",
+      "alphaMin": 9,
+      "parts": {
+        "pot": {
+          "crop": [
+            4,
+            4,
+            393,
+            361
+          ],
+          "pivot": [
+            0.5,
+            1
+          ]
+        },
+        "sprout": {
+          "crop": [
+            405,
+            4,
+            315,
+            324
+          ],
+          "pivot": [
+            0.47,
+            1
+          ]
+        },
+        "crown": {
+          "crop": [
+            728,
+            4,
+            499,
+            482
+          ],
+          "pivot": [
+            0.51,
+            1
+          ]
+        },
+        "flower": {
+          "crop": [
+            1235,
+            4,
+            333,
+            368
+          ],
+          "pivot": [
+            0.1,
+            0.04
+          ]
+        },
+        "green": {
+          "crop": [
+            1576,
+            4,
+            256,
+            334
+          ],
+          "pivot": [
+            0.04,
+            0.04
+          ]
+        },
+        "ripe": {
+          "crop": [
+            1840,
+            4,
+            258,
+            343
+          ],
+          "pivot": [
+            0.07,
+            0.04
+          ]
+        }
+      },
+      "stages": [
+        {
+          "layers": [
+            {
+              "part": "sprout",
+              "at": [
+                128,
+                161
+              ],
+              "width": 58
+            }
+          ]
+        },
+        {
+          "layers": [
+            {
+              "part": "crown",
+              "at": [
+                128,
+                161
+              ],
+              "width": 174
+            },
+            {
+              "part": "flower",
+              "at": [
+                75,
+                91
+              ],
+              "width": 32
+            },
+            {
+              "part": "flower",
+              "at": [
+                144,
+                73
+              ],
+              "width": 33
+            }
+          ]
+        },
+        {
+          "layers": [
+            {
+              "part": "crown",
+              "at": [
+                128,
+                161
+              ],
+              "width": 174
+            },
+            {
+              "part": "ripe",
+              "at": [
+                73,
+                92
+              ],
+              "width": 30
+            },
+            {
+              "part": "ripe",
+              "at": [
+                147,
+                75
+              ],
+              "width": 31
+            }
+          ]
+        }
+      ],
+      "unripe": {
+        "part": "green",
+        "at": [
+          73,
+          92
+        ],
+        "width": 29
+      }
+    },
+    {
+      "id": "cherry-tomato",
+      "alphaMin": 9,
+      "parts": {
+        "crown": {
+          "crop": [
+            4,
+            4,
+            542,
+            821
+          ],
+          "pivot": [
+            0.52,
+            1
+          ]
+        },
+        "green": {
+          "crop": [
+            554,
+            4,
+            331,
+            528
+          ],
+          "pivot": [
+            0.15,
+            0.03
+          ]
+        },
+        "ripe": {
+          "crop": [
+            893,
+            4,
+            354,
+            536
+          ],
+          "pivot": [
+            0.07,
+            0.03
+          ]
+        }
+      },
+      "stages": [
+        {
+          "layers": [
+            {
+              "part": "crown",
+              "at": [
+                128,
+                161
+              ],
+              "width": 109
+            }
+          ]
+        },
+        {
+          "layers": [
+            {
+              "part": "crown",
+              "at": [
+                128,
+                161
+              ],
+              "width": 109
+            },
+            {
+              "part": "ripe",
+              "at": [
+                126,
+                79
+              ],
+              "width": 35
+            }
+          ]
+        }
+      ],
+      "unripe": {
+        "part": "green",
+        "at": [
+          126,
+          79
+        ],
+        "width": 34
+      }
+    }
+  ]
+}
